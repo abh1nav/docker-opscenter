@@ -11,7 +11,7 @@ RUN \
 # Download and extract OpsCenter
 RUN \
   mkdir /opt/opscenter; \
-  wget -O - http://downloads.datastax.com/community/opscenter-5.0.0.tar.gz \
+  wget -O - http://downloads.datastax.com/community/opscenter-5.0.1.tar.gz \
   | tar xzf - --strip-components=1 -C "/opt/opscenter";
 
 ADD	. /src
