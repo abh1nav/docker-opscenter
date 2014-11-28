@@ -1,12 +1,8 @@
-FROM phusion/baseimage:0.9.13
+# Version 1.1
+
+FROM abh1nav/python
 
 MAINTAINER Abhinav Ajgaonkar <abhinav316@gmail.com>
-
-# Install Python
-RUN \
-  apt-get update; \
-  apt-get install -y python wget; \
-  rm -rf /var/lib/apt/lists/*
 
 # Download and extract OpsCenter
 RUN \
